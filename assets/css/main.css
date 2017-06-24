@@ -1715,7 +1715,7 @@
 			font-size: 1.25rem;
 		}
 
-		p.major-folio {
+		p.majorfolio {
 			font-size: 1.25rem;
 			top: 50%;
 			left: 50%;
@@ -1827,6 +1827,13 @@
 
 		p.major {
 			font-size: 1.1rem;
+		}
+
+		p.majorfolio {
+			font-size: 1.1rem;
+			top: 50%;
+			left: 50%;
+			background-image: url("images/gallery/thumbs/04.jpg")
 		}
 
 		h1 {
