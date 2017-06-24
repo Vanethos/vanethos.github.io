@@ -1715,6 +1715,14 @@
 			font-size: 1.25rem;
 		}
 
+		p.major-folio {
+			font-size: 1.25rem;
+			top: 50%;
+			left: 50%;
+			background-image: url("images/gallery/thumbs/04.jpg")
+		}
+
+
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.375;
