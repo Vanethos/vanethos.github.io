@@ -1,5 +1,5 @@
 ///
-/// Story by HTML5 UP
+/// Forty by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -7,57 +7,41 @@
 /* Form */
 
 	form {
-		$gutter: _size(element-margin) * 0.75;
-
 		margin: 0 0 _size(element-margin) 0;
 
 		.field {
-			margin: 0 0 ($gutter * 1) 0;
-			clear: both;
+			margin: 0 0 (_size(element-margin) * 1) 0;
 
 			&.half {
-				clear: none;
 				width: 50%;
 				float: left;
-				padding: 0 0 0 ($gutter * 1 * 0.5);
+				padding: 0 0 0 (_size(element-margin) * 1 * 0.5);
 
 				&.first {
-					padding: 0 ($gutter * 1 * 0.5) 0 0;
-				}
-			}
-
-			&.third {
-				clear: none;
-				width: (100% / 3);
-				float: left;
-				padding: 0 0 0 ($gutter * 1 * 0.5);
-
-				&.first {
-					padding: 0 ($gutter * 1 * 0.5) 0 0;
+					padding: 0 (_size(element-margin) * 1 * 0.5) 0 0;
 				}
 			}
 		}
 
 		> .actions {
-			clear: both;
-			margin: ($gutter * 1.25) 0 0 0 !important;
+			margin: (_size(element-margin) * 1.25) 0 0 0 !important;
 		}
 
 		@include breakpoint(small) {
 			.field {
-				margin: 0 0 ($gutter * 0.75) 0;
+				margin: 0 0 (_size(element-margin) * 0.75) 0;
 
 				&.half {
-					padding: 0 0 0 ($gutter * 0.75 * 0.5);
+					padding: 0 0 0 (_size(element-margin) * 0.75 * 0.5);
 
 					&.first {
-						padding: 0 ($gutter * 0.75 * 0.5) 0 0;
+						padding: 0 (_size(element-margin) * 0.75 * 0.5) 0 0;
 					}
 				}
 			}
 
 			> .actions {
-				margin: ($gutter * 1) 0 0 0 !important;
+				margin: (_size(element-margin) * 1) 0 0 0 !important;
 			}
 		}
 
@@ -72,25 +56,18 @@
 						padding: 0;
 					}
 				}
-
-				&.third {
-					width: 100%;
-					float: none;
-					padding: 0;
-
-					&.first {
-						padding: 0;
-					}
-				}
 			}
 		}
 	}
 
 	label {
+		color: _palette(fg-bold);
 		display: block;
-		font-size: 0.9rem;
+		font-size: 0.8em;
 		font-weight: _font(weight-bold);
+		letter-spacing: _font(letter-spacing-alt);
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		text-transform: uppercase;
 	}
 
 	input[type="text"],
@@ -102,19 +79,23 @@
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
-		background-color: transparent;
-		border-radius: _size(border-radius);
+		background: _palette(border-bg);
 		border: none;
-		border: solid _size(border-width);
+		border-radius: 0;
 		color: inherit;
 		display: block;
 		outline: 0;
-		padding: 0 0.825rem;
+		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
 
 		&:invalid {
 			box-shadow: none;
+		}
+
+		&:focus {
+			border-color: _palette(highlight);
+			box-shadow: 0 0 0 2px _palette(highlight);
 		}
 	}
 
@@ -124,6 +105,7 @@
 		position: relative;
 
 		&:before {
+			color: _palette(border);
 			content: '\f078';
 			display: block;
 			height: _size(element-height);
@@ -152,7 +134,7 @@
 	}
 
 	textarea {
-		padding: 0.75rem 1rem;
+		padding: 0.75em 1em;
 	}
 
 	input[type="checkbox"],
@@ -160,30 +142,28 @@
 		@include vendor('appearance', 'none');
 		display: block;
 		float: left;
-		margin-right: -2rem;
+		margin-right: -2em;
 		opacity: 0;
-		width: 1rem;
+		width: 1em;
 		z-index: -1;
 
 		& + label {
 			@include icon;
-			@include vendor('user-select', 'none');
+			color: _palette(fg);
 			cursor: pointer;
 			display: inline-block;
-			font-size: 1rem;
 			font-weight: _font(weight);
-			padding-left: (_size(element-height) * 0.6) + 0.75rem;
-			padding-right: 0.75rem;
+			padding-left: (_size(element-height) * 0.6) + 1em;
+			padding-right: 0.75em;
 			position: relative;
-			margin-bottom: 0;
 
 			&:before {
-				border-radius: _size(border-radius);
-				border: solid _size(border-width);
+				background: _palette(border-bg);
 				content: '';
 				display: inline-block;
 				height: (_size(element-height) * 0.6);
 				left: 0;
+				letter-spacing: 0;
 				line-height: (_size(element-height) * 0.575);
 				position: absolute;
 				text-align: center;
@@ -194,7 +174,16 @@
 
 		&:checked + label {
 			&:before {
+				background: _palette(fg-bold);
+				border-color: _palette(highlight);
 				content: '\f00c';
+				color: _palette(bg);
+			}
+		}
+
+		&:focus + label {
+			&:before {
+				box-shadow: 0 0 0 2px _palette(highlight);
 			}
 		}
 	}
@@ -202,7 +191,6 @@
 	input[type="checkbox"] {
 		& + label {
 			&:before {
-				border-radius: _size(border-radius);
 			}
 		}
 	}
@@ -216,97 +204,26 @@
 	}
 
 	::-webkit-input-placeholder {
+		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
+		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
+		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
+		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
+		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
-
-	@mixin color-form($p: null) {
-		label {
-			color: _palette($p, fg-bold);
-		}
-
-		input[type="text"],
-		input[type="password"],
-		input[type="email"],
-		input[type="tel"],
-		input[type="search"],
-		input[type="url"],
-		select,
-		textarea {
-			border-color: _palette($p, border);
-
-			&:focus {
-				border-color: _palette($p, accent);
-				box-shadow: 0 0 0 _size(border-width) _palette($p, accent);
-			}
-		}
-
-		.select-wrapper {
-			&:before {
-				color: _palette($p, border);
-			}
-		}
-
-		input[type="checkbox"],
-		input[type="radio"], {
-			& + label {
-				color: _palette($p, fg);
-
-				&:before {
-					border-color: _palette($p, border);
-				}
-			}
-
-			&:checked + label {
-				&:before {
-					background-color: _palette($p, fg-bold);
-					border-color: _palette($p, fg-bold);
-					color: _palette($p, bg);
-				}
-			}
-
-			&:focus + label {
-				&:before {
-					border-color: _palette($p, accent);
-					box-shadow: 0 0 0 _size(border-width) _palette($p, accent);
-				}
-			}
-		}
-
-		::-webkit-input-placeholder {
-			color: _palette($p, fg-light) !important;
-		}
-
-		:-moz-placeholder {
-			color: _palette($p, fg-light) !important;
-		}
-
-		::-moz-placeholder {
-			color: _palette($p, fg-light) !important;
-		}
-
-		:-ms-input-placeholder {
-			color: _palette($p, fg-light) !important;
-		}
-
-		.formerize-placeholder {
-			color: _palette($p, fg-light) !important;
-		}
-	}
-
-	@include color-form;
