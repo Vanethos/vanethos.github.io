@@ -61,6 +61,14 @@
 		&.major {
 			font-size: 1.25rem;
 		}
+
+		&.majorfolio {
+			font-size: 1.25rem;
+			top: 50%;
+			left: 50%;
+			color: #000000
+			background-image: url("images/gallery/thumbs/04.jpg")
+		}
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -167,6 +175,14 @@
 		p {
 			&.major {
 				font-size: 1.1rem;
+			}
+
+			&.majorfolio {
+				font-size: 1.25rem;
+				top: 50%;
+				left: 50%;
+				color: #000000
+				background-image: url("images/gallery/thumbs/04.jpg")
 			}
 		}
 
