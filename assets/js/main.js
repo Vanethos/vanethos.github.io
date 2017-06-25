@@ -136,6 +136,8 @@
 				}
 			});
 
+			$('.smooth-scroll-middle').scrolly({ anchor: 'middle' });
+
 		// Tiles.
 			var $tiles = $('.tiles > article');
 
