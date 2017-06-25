@@ -64,8 +64,7 @@
 
 		&.majorfolio {
 			font-size: 1.25rem;
-			top: 50%;
-			left: 50%;
+			vertical-align: middle;
 			color: #000000
 			background-image: url("images/gallery/thumbs/04.jpg")
 		}
@@ -179,8 +178,7 @@
 
 			&.majorfolio {
 				font-size: 1.25rem;
-				top: 50%;
-				left: 50%;
+				vertical-align: middle;
 				color: #000000
 				background-image: url("images/gallery/thumbs/04.jpg")
 			}
