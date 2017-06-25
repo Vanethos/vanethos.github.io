@@ -1623,7 +1623,7 @@
 	}
 
 	body {
-		background: #004D40;
+		background: #242943;
 		/*#242943*/
 	}
 
@@ -2859,11 +2859,11 @@
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: /*#87c5a4*/#4CAF50;
+				background-color: /*#87c5a4*/#388E3C;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: /*#8d82c4*/#795548;
+				background-color: /*#8d82c4*/#5D4037;
 			}
 
 			.tiles article:nth-child(6n - 3):before {
@@ -3287,11 +3287,11 @@
 		}
 
 			#header.alt.style1 .logo strong {
-				color: #6fc3df;
+				color: /*#6fc3df*/#388E3C	;
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #8d82c4;
+				color: /*#8d82c4*/#5D4037;
 			}
 
 			#header.alt.style3 .logo strong {
