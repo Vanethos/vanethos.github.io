@@ -1,0 +1,188 @@
+html,
+        body {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        }
+
+
+        body {
+            margin: 0 auto;
+            padding: 0;
+            max-width: 50em;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            padding: 4em 1em;
+            color: #555;
+        }
+
+        h1 {
+            color: #111;
+            margin: 0;
+            padding: 0;
+            font-weight: 900;
+        }
+
+        h2 {
+            margin: 0 0 0.5em 0;
+            font-weight: 700;
+        }
+
+
+        strong {
+            color: #333;
+        }
+
+        div.header-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 647px) {
+            div.header-name {
+                text-align: center;
+            }
+        }
+
+        div.header-name {
+            width: 200px;
+            margin-right: 2em;
+            position: relative; 
+        }
+
+        div.header-i-am {
+            width: 400px;
+            
+        }
+
+        h1.who-am-i {
+            color: #555;
+            font-weight: 200;
+            text-align: justify;
+        }
+
+        a.header-hyperlinks {
+            color: #111;
+            font-weight: 550;
+            text-decoration: none;
+            background-image: linear-gradient(rgba(43, 192, 100, 0.4), rgba(43, 192, 100, 0.4));
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 4px;
+            transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+        }
+
+        a.header-hyperlinks:hover,
+        a.header-hyperlinks:focus {
+        text-decoration: none;
+        background-size: 100% 100%;
+        }
+
+        a.show {
+            color: #111;
+            background-size: 100% 2px;
+            background-size: 100% 100%;
+        }
+
+        div.icon-holder-div {
+            font-size: 2.5em;
+            margin-top: 0.5em;
+        }
+
+        .fa-twitter-square {
+            color: #5ac02b
+        }
+
+
+        .fa-twitter-square:hover,
+        .fa-twitter-square:focus
+         {
+            color: #1B390C
+        }
+
+        .fa-medium {
+            color: #5ac02b
+        }
+
+        .fa-medium:hover,
+        .fa-medium:focus
+         {
+            color: #1B390C
+        }
+
+        .fa-github-square {
+            color: #5ac02b
+        }
+
+
+        .fa-github-square:hover,
+        .fa-github-square:focus
+         {
+            color: #1B390C
+        }
+        
+        .fa-linkedin {
+            color: #5ac02b
+        }
+
+        .fa-linkedin:hover,
+        .fa-linkedin:focus
+         {
+            color: #1B390C
+        }
+
+        .fa-envelope-square {
+            color: #5ac02b
+        }
+
+        .fa-envelope-square:hover,
+        .fa-envelope-square:focus
+         {
+            color: #1B390C
+        }
+
+        i.fab, i.fas {
+            text-decoration: none;
+            transition: color cubic-bezier(0,.5,0,1) 0.3s; 
+        }
+
+        i.fab:hover,
+        i.fab:focus,
+        i.fas:hover,
+        i.fas:focus {
+            -webkit-transition: color 200ms linear;
+            -ms-transition: color 200ms linear;
+            transition: color 200ms linear;
+        }
+
+        div.description-text {
+            width: 100%;
+            margin: 2em 0 0 0;
+            text-align: justify;
+            font-size: large;
+            line-height: 1.5;
+            display: none;
+        }
+
+        div.show {
+            display: block;
+        }
+
+        img {
+            width: 175px;
+            border-radius: 50%;
+        }
+
+        a.body-link {
+            font-weight: bold;
+            color: #2b87c0;
+        }
+
+        a.body-link:hover,
+        a.body-link:focus {
+            font-weight: bold;
+        }
+
+        strong {
+            color:#333;
+        }
