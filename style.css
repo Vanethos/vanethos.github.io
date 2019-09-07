@@ -1,7 +1,7 @@
 html,
 body {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 
@@ -10,7 +10,6 @@ body {
     padding: 0;
     max-width: 50em;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    padding: 4em 1em;
     color: #555;
 }
 
@@ -34,6 +33,9 @@ div.header-section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 
 @media screen and (max-width: 647px) {
@@ -43,7 +45,6 @@ div.header-section {
 }
 
 div.header-name {
-    width: 200px;
     margin-right: 2em;
     position: relative;
 }
