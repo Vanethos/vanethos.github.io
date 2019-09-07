@@ -5,7 +5,7 @@
 
 function setBioEventListener() {
     console.log("Hello world!");
-    Array.from(document.getElementsByClassName('header-hyperlinks')).forEach(e => {
+    Array.from(document.getElementsByClassName('bio-header')).forEach(e => {
         console.log(e.classList);
         e.addEventListener('click', bioToggle);
     });
